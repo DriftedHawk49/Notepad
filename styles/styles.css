@@ -18,7 +18,7 @@ html body {
 }
 
 h1{
-	grid-column: span 11 / auto;
+
 	text-align: center;
 	color: #E5F1F7 ;
 	font-weight: normal;
@@ -28,7 +28,6 @@ h1{
 }
 
 p{
-	grid-column: span 11 / auto;
 	text-align: center;
 	line-height: 28px;
 	margin: 0px 0px 10px 0px ;
@@ -45,10 +44,11 @@ p{
 }
 
 .add{
+	margin-top: 5px;
 	float: right;
-	/*margin: 20px auto;*/
 	cursor: pointer;
 	border-radius: 50px 50px 50px 50px;
+	display: absolute;
 }
 
 .add:hover {
@@ -64,8 +64,6 @@ p{
 	display: grid;
 	grid-template-rows: auto auto;
 	margin: 30px 30px 30px 30px;
-
-
 }
 
 .cross{
@@ -91,6 +89,86 @@ p{
 
 }
 
+.placeholder img{
+	width: 50px;
+	height: 50px;
+}
+
 li {
 	list-style-type: none;
+}
+
+@media (max-width: 768px) and (min-width: 425px){
+	h1{
+	font-size: 70px;
+	}
+
+	p{
+		padding: 20px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	#textArea{
+		font-size: 15px;
+	}
+
+
+	.notepadEnclosure {
+	padding: 0px;
+	display: block;
+	width: 80%;
+	margin: auto;
+	}
+
+
+}
+
+
+
+
+@media (max-width: 425px) {
+
+	#textArea{
+		font-size: 15px;
+	}
+
+	h1{
+	font-size: 50px;
+
+	}
+
+	.add{
+		width: 50px;
+		height: 50px;
+	}
+
+	p{
+		margin-top: 10px;
+		font-size: 10px;
+		line-height: 11px;
+	}
+
+	.placeholder{
+		font-size: 25px;
+	}
+	.placeholder img{
+		width: 25px;
+		height: 25px;
+	}
+
+	.notepadEnclosure {
+	padding: 0px;
+	display: block;
+	width: 80%;
+	margin: auto;
+	}
+
+	.cross{
+
+	width: 30px;
+	height: 30px;
+	border-radius: 15px 15px 15px 15px;
+}
+
 }

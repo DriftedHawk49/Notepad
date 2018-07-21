@@ -7,7 +7,7 @@
     <title>Notepad
     </title>
     <link href="styles/styles.css" type="text/css" rel="stylesheet">
-    <!-- <script src="js/jquery.js" type="text/javascript"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="js/knockoutjs.js" type="text/javascript"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
         A SIMPLE APP TO RECORD WHATEVER YOU WANT.<br> START WRITING AND IT'LL SAVE ON ITS OWN.<br> NEXT TIME YOU VISIT US , IT'LL BE RIGHT THERE :)
     </p>
     <div>
-        <p class="placeholder"> To Start a Note , Click on <img src="assets/plus.png" style="width: 50px;height: 50px"> Icon in the Top Right Corner</p>
+        <p class="placeholder"> To Start a Note , Click on <img src="assets/plus.png"> Icon in the Top Right Corner</p>
     <ul class="notepadEnclosure" data-bind="foreach: notepadArray">
         <li class="tb"><img title="Delete this note" data-bind="click: $parent.deleteNote" class="cross" src="assets/cross.png"><textarea data-bind="value: noteData, event: { onfocus: $parent.syncNote }" placeholder="Start your notes here...." id="textArea"></textarea></li>
     </ul>
