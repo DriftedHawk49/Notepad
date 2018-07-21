@@ -1,0 +1,100 @@
+* {
+  font-family: "Montserrat";
+  color: #E5F1F7 ;
+  text-shadow: 1px 1px 0px #6B92BF;
+}
+
+.box{
+	border: 10px solid #E5F1F7;
+}
+
+html body {
+  background-image: url(../assets/bg.png);
+  width: 100%;
+  margin:0px;
+  padding: 0px;
+  height: 100%;
+
+}
+
+header{
+
+}
+
+h1{
+	grid-column: span 11 / auto;
+	text-align: center;
+	color: #E5F1F7 ;
+	font-weight: normal;
+	text-shadow: 1px 1px 0px #6B92BF;
+	margin: 0px;
+	font-size: 100px
+}
+
+p{
+	grid-column: span 11 / auto;
+	text-align: center;
+	line-height: 28px;
+	margin: 0px 0px 10px 0px ;
+}
+
+#textArea{
+	border: 3px solid #E5F1F7;
+	border-radius: 5px 5px 5px 5px;
+	height: 50vh;
+	background-image: url("../assets/textbox.png");
+	font-size: 30px;
+	color: #0f5fd2;
+	padding: 10px 10px 10px 10px;
+}
+
+.add{
+	float: right;
+	/*margin: 20px auto;*/
+	cursor: pointer;
+	border-radius: 50px 50px 50px 50px;
+}
+
+.add:hover {
+	box-shadow: 1px 1px 100px white;
+}
+
+.notepadEnclosure {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.tb {
+	display: grid;
+	grid-template-rows: auto auto;
+	margin: 30px 30px 30px 30px;
+
+
+}
+
+.cross{
+	margin-left: 15px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.cross:hover {
+
+	box-shadow: 1px 1px 100px white;
+}
+
+.placeholder{
+	text-align: center;
+	margin: 32px 40px 40px 40px;
+	font-size: 40px;
+	opacity: .8;
+	color: #D6D9DF;
+	line-height: 40px;
+
+}
+
+li {
+	list-style-type: none;
+}
