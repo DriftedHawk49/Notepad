@@ -1,5 +1,4 @@
 
-
 class notepad {
 	constructor(){
 		this.noteData = "";
@@ -8,7 +7,6 @@ class notepad {
 // localStorage.clear();
 var viewmodel = function(){
 	var self = this;
-
 	if(!localStorage.notepad){
 		self.notepadArray = ko.observableArray();
 	} else {
@@ -16,7 +14,7 @@ var viewmodel = function(){
 	}
 
 	if(localStorage.notepad!="[]"){
-		$(".placeholder").css("display","none");
+		document.getElementsByClassName("placeholder")[0].style.display = 'none';
 	}
 
 	setInterval(function(){
@@ -27,12 +25,12 @@ var viewmodel = function(){
 		self.notepadArray.remove(note);
 		console.log(self.notepadArray());
 		if(self.notepadArray().length==0){
-			$(".placeholder").css("display","block");
+			document.getElementsByClassName("placeholder")[0].style.display = 'block';
 		}
 	}
 
 	self.addNote = function(){
-		$(".placeholder").css("display","none");
+		document.getElementsByClassName("placeholder")[0].style.display = 'none';
 		var note = new notepad();
 		self.notepadArray.push(note);
 	}

@@ -17,10 +17,6 @@ html body {
 
 }
 
-header{
-
-}
-
 h1{
 	grid-column: span 11 / auto;
 	text-align: center;
